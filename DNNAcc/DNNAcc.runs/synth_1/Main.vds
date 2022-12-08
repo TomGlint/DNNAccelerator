@@ -1,0 +1,889 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Dec  8 14:43:36 2022
+# Process ID: 18948
+# Current directory: C:/Users/tomgl/Vivado/DNNAcc/DNNAcc.runs/synth_1
+# Command line: vivado.exe -log Main.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Main.tcl
+# Log file: C:/Users/tomgl/Vivado/DNNAcc/DNNAcc.runs/synth_1/Main.vds
+# Journal file: C:/Users/tomgl/Vivado/DNNAcc/DNNAcc.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Main.tcl -notrace
+create_project: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 457.137 ; gain = 162.641
+Command: synth_design -top Main -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8532 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 978.652 ; gain = 233.855
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Main' [C:/Users/tomgl/Vivado/DNNAcc/DNNAcc.srcs/sources_1/new/Main.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Display7' [C:/Users/tomgl/Vivado/DNNAcc/DNNAcc.srcs/sources_1/new/Display7.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Display7' (1#1) [C:/Users/tomgl/Vivado/DNNAcc/DNNAcc.srcs/sources_1/new/Display7.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Receiver' [C:/Users/tomgl/Vivado/DNNAcc/DNNAcc.srcs/sources_1/new/Receiver.v:24]
+	Parameter W5Frequency bound to: 100000000 - type: integer 
+	Parameter baudRate bound to: 9600 - type: integer 
+	Parameter samplingInterval bound to: 10416 - type: integer 
+	Parameter halfSamplingInterval bound to: 5208 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Receiver' (2#1) [C:/Users/tomgl/Vivado/DNNAcc/DNNAcc.srcs/sources_1/new/Receiver.v:24]
+INFO: [Synth 8-6157] synthesizing module 'DNNProcessingElement' [C:/Users/tomgl/Vivado/DNNAcc/DNNAcc.srcs/sources_1/new/DNNProcessingElement.v:23]
+	Parameter BITWIDTH bound to: 8 - type: integer 
+	Parameter INPUT_ARRAY_SIZE bound to: 100 - type: integer 
+	Parameter OUTPUT_ARRAY_SIZE bound to: 100 - type: integer 
+	Parameter WEIGHT_ARRAY_SIZE bound to: 100 - type: integer 
+	Parameter CNN_LAYER bound to: 1 - type: integer 
+	Parameter MAX_POOL_LAYER bound to: 2 - type: integer 
+	Parameter RELU_LAYER bound to: 3 - type: integer 
+	Parameter FULLY_CONNECTED_LAYER bound to: 4 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/tomgl/Vivado/DNNAcc/DNNAcc.srcs/sources_1/new/DNNProcessingElement.v:196]
+WARNING: [Synth 8-6014] Unused sequential element indexOutput_reg was removed.  [C:/Users/tomgl/Vivado/DNNAcc/DNNAcc.srcs/sources_1/new/DNNProcessingElement.v:155]
+WARNING: [Synth 8-6014] Unused sequential element indexInput_reg was removed.  [C:/Users/tomgl/Vivado/DNNAcc/DNNAcc.srcs/sources_1/new/DNNProcessingElement.v:157]
+WARNING: [Synth 8-6014] Unused sequential element indexWeight_reg was removed.  [C:/Users/tomgl/Vivado/DNNAcc/DNNAcc.srcs/sources_1/new/DNNProcessingElement.v:159]
+INFO: [Synth 8-6155] done synthesizing module 'DNNProcessingElement' (3#1) [C:/Users/tomgl/Vivado/DNNAcc/DNNAcc.srcs/sources_1/new/DNNProcessingElement.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Sender' [C:/Users/tomgl/Vivado/DNNAcc/DNNAcc.srcs/sources_1/new/Sender.v:23]
+	Parameter W5Frequency bound to: 100000000 - type: integer 
+	Parameter baudRate bound to: 9600 - type: integer 
+	Parameter samplingInterval bound to: 10416 - type: integer 
+	Parameter halfSamplingInterval bound to: 5208 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Sender' (4#1) [C:/Users/tomgl/Vivado/DNNAcc/DNNAcc.srcs/sources_1/new/Sender.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Main' (5#1) [C:/Users/tomgl/Vivado/DNNAcc/DNNAcc.srcs/sources_1/new/Main.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1051.281 ; gain = 306.484
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1051.281 ; gain = 306.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1051.281 ; gain = 306.484
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1051.281 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/tomgl/Vivado/DNNAcc/DNNAcc.srcs/constrs_1/new/DNNAccConstraints.xdc]
+Finished Parsing XDC File [C:/Users/tomgl/Vivado/DNNAcc/DNNAcc.srcs/constrs_1/new/DNNAccConstraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/tomgl/Vivado/DNNAcc/DNNAcc.srcs/constrs_1/new/DNNAccConstraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Main_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Main_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1156.895 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1156.895 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1156.895 ; gain = 412.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1156.895 ; gain = 412.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1156.895 ; gain = 412.098
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Receiver'
+INFO: [Synth 8-5545] ROM "sequenceCounter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3936] Found unconnected internal register 'yStride_reg' and it is trimmed from '8' to '7' bits. [C:/Users/tomgl/Vivado/DNNAcc/DNNAcc.srcs/sources_1/new/DNNProcessingElement.v:231]
+INFO: [Synth 8-5546] ROM "globalState" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "globalState" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Sender'
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE9 |                             0000 | 00000000000000000000000000000000
+                 iSTATE8 |                             0001 | 00000000000000000000000000000001
+                 iSTATE6 |                             0010 | 00000000000000000000000000000010
+                 iSTATE4 |                             0011 | 00000000000000000000000000000011
+                 iSTATE5 |                             0100 | 00000000000000000000000000000100
+                 iSTATE3 |                             0101 | 00000000000000000000000000000101
+                 iSTATE1 |                             0110 | 00000000000000000000000000000110
+                 iSTATE0 |                             0111 | 00000000000000000000000000000111
+                 iSTATE2 |                             1000 | 00000000000000000000000000001000
+                  iSTATE |                             1001 | 00000000000000000000000000001001
+                 iSTATE7 |                             1010 | 00000000000000000000000000001010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'Receiver'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE9 |                             0000 | 00000000000000000000000000000000
+                 iSTATE6 |                             0001 | 00000000000000000000000000000010
+                 iSTATE4 |                             0010 | 00000000000000000000000000000011
+                 iSTATE5 |                             0011 | 00000000000000000000000000000100
+                 iSTATE3 |                             0100 | 00000000000000000000000000000101
+                 iSTATE1 |                             0101 | 00000000000000000000000000000110
+                  iSTATE |                             0110 | 00000000000000000000000000000111
+                 iSTATE2 |                             0111 | 00000000000000000000000000001000
+                 iSTATE0 |                             1000 | 00000000000000000000000000001001
+                 iSTATE8 |                             1001 | 00000000000000000000000000001010
+                 iSTATE7 |                             1010 | 00000000000000000000000000001011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'Sender'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1156.895 ; gain = 412.098
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 17    
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 25    
+	                8 Bit    Registers := 6     
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Multipliers : 
+	                32x32  Multipliers := 7     
+	                 8x32  Multipliers := 2     
++---RAMs : 
+	              808 Bit         RAMs := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 12    
+	  11 Input     32 Bit        Muxes := 2     
+	   8 Input     32 Bit        Muxes := 1     
+	  11 Input      8 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 2     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   8 Input      7 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 22    
+	   3 Input      3 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 2     
+	  11 Input      1 Bit        Muxes := 11    
+	   2 Input      1 Bit        Muxes := 82    
+	   8 Input      1 Bit        Muxes := 32    
+	   6 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Receiver 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	  11 Input     32 Bit        Muxes := 1     
+	  11 Input      8 Bit        Muxes := 2     
+	  11 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 11    
+	  11 Input      1 Bit        Muxes := 4     
+Module DNNProcessingElement 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 15    
++---Registers : 
+	               32 Bit    Registers := 23    
+	                8 Bit    Registers := 3     
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Multipliers : 
+	                32x32  Multipliers := 7     
+	                 8x32  Multipliers := 2     
++---RAMs : 
+	              808 Bit         RAMs := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 11    
+	   8 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   8 Input      7 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 82    
+	   8 Input      1 Bit        Muxes := 32    
+	   6 Input      1 Bit        Muxes := 1     
+Module Sender 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	  11 Input     32 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 11    
+	  11 Input      1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'xStride_reg[7:0]' into 'xStride_reg[7:0]' [C:/Users/tomgl/Vivado/DNNAcc/DNNAcc.srcs/sources_1/new/DNNProcessingElement.v:227]
+INFO: [Synth 8-4471] merging register 'W_reg[31:0]' into 'W_reg[31:0]' [C:/Users/tomgl/Vivado/DNNAcc/DNNAcc.srcs/sources_1/new/DNNProcessingElement.v:142]
+INFO: [Synth 8-4471] merging register 's_reg[31:0]' into 's_reg[31:0]' [C:/Users/tomgl/Vivado/DNNAcc/DNNAcc.srcs/sources_1/new/DNNProcessingElement.v:152]
+INFO: [Synth 8-4471] merging register 'c_reg[31:0]' into 'c_reg[31:0]' [C:/Users/tomgl/Vivado/DNNAcc/DNNAcc.srcs/sources_1/new/DNNProcessingElement.v:148]
+INFO: [Synth 8-4471] merging register 'p_reg[31:0]' into 'p_reg[31:0]' [C:/Users/tomgl/Vivado/DNNAcc/DNNAcc.srcs/sources_1/new/DNNProcessingElement.v:149]
+INFO: [Synth 8-4471] merging register 'm_reg[31:0]' into 'm_reg[31:0]' [C:/Users/tomgl/Vivado/DNNAcc/DNNAcc.srcs/sources_1/new/DNNProcessingElement.v:147]
+INFO: [Synth 8-4471] merging register 'r_reg[31:0]' into 'r_reg[31:0]' [C:/Users/tomgl/Vivado/DNNAcc/DNNAcc.srcs/sources_1/new/DNNProcessingElement.v:151]
+INFO: [Synth 8-4471] merging register 'q_reg[31:0]' into 'q_reg[31:0]' [C:/Users/tomgl/Vivado/DNNAcc/DNNAcc.srcs/sources_1/new/DNNProcessingElement.v:150]
+INFO: [Synth 8-4471] merging register 'S_reg[31:0]' into 'S_reg[31:0]' [C:/Users/tomgl/Vivado/DNNAcc/DNNAcc.srcs/sources_1/new/DNNProcessingElement.v:141]
+INFO: [Synth 8-4471] merging register 'R_reg[31:0]' into 'R_reg[31:0]' [C:/Users/tomgl/Vivado/DNNAcc/DNNAcc.srcs/sources_1/new/DNNProcessingElement.v:140]
+INFO: [Synth 8-4471] merging register 'S_reg[31:0]' into 'S_reg[31:0]' [C:/Users/tomgl/Vivado/DNNAcc/DNNAcc.srcs/sources_1/new/DNNProcessingElement.v:141]
+INFO: [Synth 8-4471] merging register 'Q_reg[31:0]' into 'Q_reg[31:0]' [C:/Users/tomgl/Vivado/DNNAcc/DNNAcc.srcs/sources_1/new/DNNProcessingElement.v:139]
+INFO: [Synth 8-4471] merging register 's_reg[31:0]' into 's_reg[31:0]' [C:/Users/tomgl/Vivado/DNNAcc/DNNAcc.srcs/sources_1/new/DNNProcessingElement.v:152]
+INFO: [Synth 8-4471] merging register 'r_reg[31:0]' into 'r_reg[31:0]' [C:/Users/tomgl/Vivado/DNNAcc/DNNAcc.srcs/sources_1/new/DNNProcessingElement.v:151]
+INFO: [Synth 8-4471] merging register 'q_reg[31:0]' into 'q_reg[31:0]' [C:/Users/tomgl/Vivado/DNNAcc/DNNAcc.srcs/sources_1/new/DNNProcessingElement.v:150]
+INFO: [Synth 8-4471] merging register 'p_reg[31:0]' into 'p_reg[31:0]' [C:/Users/tomgl/Vivado/DNNAcc/DNNAcc.srcs/sources_1/new/DNNProcessingElement.v:149]
+INFO: [Synth 8-4471] merging register 'c_reg[31:0]' into 'c_reg[31:0]' [C:/Users/tomgl/Vivado/DNNAcc/DNNAcc.srcs/sources_1/new/DNNProcessingElement.v:148]
+INFO: [Synth 8-4471] merging register 'm_reg[31:0]' into 'm_reg[31:0]' [C:/Users/tomgl/Vivado/DNNAcc/DNNAcc.srcs/sources_1/new/DNNProcessingElement.v:147]
+INFO: [Synth 8-4471] merging register 'R_reg[31:0]' into 'R_reg[31:0]' [C:/Users/tomgl/Vivado/DNNAcc/DNNAcc.srcs/sources_1/new/DNNProcessingElement.v:140]
+INFO: [Synth 8-4471] merging register 'C_reg[31:0]' into 'C_reg[31:0]' [C:/Users/tomgl/Vivado/DNNAcc/DNNAcc.srcs/sources_1/new/DNNProcessingElement.v:137]
+INFO: [Synth 8-4471] merging register 'Q_reg[31:0]' into 'Q_reg[31:0]' [C:/Users/tomgl/Vivado/DNNAcc/DNNAcc.srcs/sources_1/new/DNNProcessingElement.v:139]
+INFO: [Synth 8-4471] merging register 'P_reg[31:0]' into 'P_reg[31:0]' [C:/Users/tomgl/Vivado/DNNAcc/DNNAcc.srcs/sources_1/new/DNNProcessingElement.v:138]
+INFO: [Synth 8-4471] merging register 'S_reg[31:0]' into 'S_reg[31:0]' [C:/Users/tomgl/Vivado/DNNAcc/DNNAcc.srcs/sources_1/new/DNNProcessingElement.v:141]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/tomgl/Vivado/DNNAcc/DNNAcc.srcs/sources_1/new/DNNProcessingElement.v:237]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/tomgl/Vivado/DNNAcc/DNNAcc.srcs/sources_1/new/DNNProcessingElement.v:237]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/tomgl/Vivado/DNNAcc/DNNAcc.srcs/sources_1/new/DNNProcessingElement.v:234]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/tomgl/Vivado/DNNAcc/DNNAcc.srcs/sources_1/new/DNNProcessingElement.v:233]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/tomgl/Vivado/DNNAcc/DNNAcc.srcs/sources_1/new/DNNProcessingElement.v:235]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/tomgl/Vivado/DNNAcc/DNNAcc.srcs/sources_1/new/DNNProcessingElement.v:235]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/tomgl/Vivado/DNNAcc/DNNAcc.srcs/sources_1/new/DNNProcessingElement.v:236]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/tomgl/Vivado/DNNAcc/DNNAcc.srcs/sources_1/new/DNNProcessingElement.v:236]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/tomgl/Vivado/DNNAcc/DNNAcc.srcs/sources_1/new/DNNProcessingElement.v:236]
+DSP Report: Generating DSP outputSize1, operation Mode is: A2*B.
+DSP Report: register outputSize1 is absorbed into DSP outputSize1.
+DSP Report: operator outputSize1 is absorbed into DSP outputSize1.
+DSP Report: operator outputSize1 is absorbed into DSP outputSize1.
+DSP Report: Generating DSP outputSize1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator outputSize1 is absorbed into DSP outputSize1.
+DSP Report: operator outputSize1 is absorbed into DSP outputSize1.
+DSP Report: Generating DSP outputSize1, operation Mode is: A2*B2.
+DSP Report: register outputSize1 is absorbed into DSP outputSize1.
+DSP Report: register outputSize1 is absorbed into DSP outputSize1.
+DSP Report: operator outputSize1 is absorbed into DSP outputSize1.
+DSP Report: operator outputSize1 is absorbed into DSP outputSize1.
+DSP Report: Generating DSP outputSize1, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register outputSize1 is absorbed into DSP outputSize1.
+DSP Report: operator outputSize1 is absorbed into DSP outputSize1.
+DSP Report: operator outputSize1 is absorbed into DSP outputSize1.
+DSP Report: Generating DSP outputSize0, operation Mode is: A2*B.
+DSP Report: register outputSize0 is absorbed into DSP outputSize0.
+DSP Report: operator outputSize0 is absorbed into DSP outputSize0.
+DSP Report: operator outputSize0 is absorbed into DSP outputSize0.
+DSP Report: Generating DSP outputSize_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register outputSize_reg is absorbed into DSP outputSize_reg.
+DSP Report: operator outputSize0 is absorbed into DSP outputSize_reg.
+DSP Report: operator outputSize0 is absorbed into DSP outputSize_reg.
+DSP Report: Generating DSP outputSize0, operation Mode is: A*B2.
+DSP Report: register outputSize0 is absorbed into DSP outputSize0.
+DSP Report: operator outputSize0 is absorbed into DSP outputSize0.
+DSP Report: operator outputSize0 is absorbed into DSP outputSize0.
+DSP Report: Generating DSP outputSize_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register outputSize_reg is absorbed into DSP outputSize_reg.
+DSP Report: operator outputSize0 is absorbed into DSP outputSize_reg.
+DSP Report: operator outputSize0 is absorbed into DSP outputSize_reg.
+DSP Report: Generating DSP inputSize3, operation Mode is: A*B2.
+DSP Report: register inputSize3 is absorbed into DSP inputSize3.
+DSP Report: operator inputSize3 is absorbed into DSP inputSize3.
+DSP Report: operator inputSize3 is absorbed into DSP inputSize3.
+DSP Report: Generating DSP inputSize3, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register inputSize3 is absorbed into DSP inputSize3.
+DSP Report: operator inputSize3 is absorbed into DSP inputSize3.
+DSP Report: operator inputSize3 is absorbed into DSP inputSize3.
+DSP Report: Generating DSP inputSize3, operation Mode is: A*B.
+DSP Report: operator inputSize3 is absorbed into DSP inputSize3.
+DSP Report: operator inputSize3 is absorbed into DSP inputSize3.
+DSP Report: Generating DSP inputSize3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator inputSize3 is absorbed into DSP inputSize3.
+DSP Report: operator inputSize3 is absorbed into DSP inputSize3.
+DSP Report: Generating DSP inputSize1, operation Mode is: A*B.
+DSP Report: operator inputSize1 is absorbed into DSP inputSize1.
+DSP Report: operator inputSize1 is absorbed into DSP inputSize1.
+DSP Report: Generating DSP inputSize1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator inputSize1 is absorbed into DSP inputSize1.
+DSP Report: operator inputSize1 is absorbed into DSP inputSize1.
+DSP Report: Generating DSP inputSize1, operation Mode is: A*B.
+DSP Report: operator inputSize1 is absorbed into DSP inputSize1.
+DSP Report: operator inputSize1 is absorbed into DSP inputSize1.
+DSP Report: Generating DSP inputSize1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator inputSize1 is absorbed into DSP inputSize1.
+DSP Report: operator inputSize1 is absorbed into DSP inputSize1.
+DSP Report: Generating DSP inputSize0, operation Mode is: A2*B.
+DSP Report: register inputSize0 is absorbed into DSP inputSize0.
+DSP Report: operator inputSize0 is absorbed into DSP inputSize0.
+DSP Report: operator inputSize0 is absorbed into DSP inputSize0.
+DSP Report: Generating DSP inputSize_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register inputSize_reg is absorbed into DSP inputSize_reg.
+DSP Report: operator inputSize0 is absorbed into DSP inputSize_reg.
+DSP Report: operator inputSize0 is absorbed into DSP inputSize_reg.
+DSP Report: Generating DSP inputSize0, operation Mode is: A*B2.
+DSP Report: register inputSize0 is absorbed into DSP inputSize0.
+DSP Report: operator inputSize0 is absorbed into DSP inputSize0.
+DSP Report: operator inputSize0 is absorbed into DSP inputSize0.
+DSP Report: Generating DSP inputSize_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register inputSize_reg is absorbed into DSP inputSize_reg.
+DSP Report: operator inputSize0 is absorbed into DSP inputSize_reg.
+DSP Report: operator inputSize0 is absorbed into DSP inputSize_reg.
+DSP Report: Generating DSP weightSize2, operation Mode is: A2*B.
+DSP Report: register weightSize2 is absorbed into DSP weightSize2.
+DSP Report: operator weightSize2 is absorbed into DSP weightSize2.
+DSP Report: operator weightSize2 is absorbed into DSP weightSize2.
+DSP Report: Generating DSP weightSize2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator weightSize2 is absorbed into DSP weightSize2.
+DSP Report: operator weightSize2 is absorbed into DSP weightSize2.
+DSP Report: Generating DSP weightSize2, operation Mode is: A2*B2.
+DSP Report: register weightSize2 is absorbed into DSP weightSize2.
+DSP Report: register weightSize2 is absorbed into DSP weightSize2.
+DSP Report: operator weightSize2 is absorbed into DSP weightSize2.
+DSP Report: operator weightSize2 is absorbed into DSP weightSize2.
+DSP Report: Generating DSP weightSize2, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register weightSize2 is absorbed into DSP weightSize2.
+DSP Report: operator weightSize2 is absorbed into DSP weightSize2.
+DSP Report: operator weightSize2 is absorbed into DSP weightSize2.
+DSP Report: Generating DSP weightSize1, operation Mode is: A2*B.
+DSP Report: register weightSize1 is absorbed into DSP weightSize1.
+DSP Report: operator weightSize1 is absorbed into DSP weightSize1.
+DSP Report: operator weightSize1 is absorbed into DSP weightSize1.
+DSP Report: Generating DSP weightSize1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator weightSize1 is absorbed into DSP weightSize1.
+DSP Report: operator weightSize1 is absorbed into DSP weightSize1.
+DSP Report: Generating DSP weightSize1, operation Mode is: A*B2.
+DSP Report: register weightSize1 is absorbed into DSP weightSize1.
+DSP Report: operator weightSize1 is absorbed into DSP weightSize1.
+DSP Report: operator weightSize1 is absorbed into DSP weightSize1.
+DSP Report: Generating DSP weightSize1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator weightSize1 is absorbed into DSP weightSize1.
+DSP Report: operator weightSize1 is absorbed into DSP weightSize1.
+DSP Report: Generating DSP weightSize0, operation Mode is: A2*B.
+DSP Report: register weightSize0 is absorbed into DSP weightSize0.
+DSP Report: operator weightSize0 is absorbed into DSP weightSize0.
+DSP Report: operator weightSize0 is absorbed into DSP weightSize0.
+DSP Report: Generating DSP weightSize_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register weightSize_reg is absorbed into DSP weightSize_reg.
+DSP Report: operator weightSize0 is absorbed into DSP weightSize_reg.
+DSP Report: operator weightSize0 is absorbed into DSP weightSize_reg.
+DSP Report: Generating DSP weightSize0, operation Mode is: A*B2.
+DSP Report: register weightSize0 is absorbed into DSP weightSize0.
+DSP Report: operator weightSize0 is absorbed into DSP weightSize0.
+DSP Report: operator weightSize0 is absorbed into DSP weightSize0.
+DSP Report: Generating DSP weightSize_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register weightSize_reg is absorbed into DSP weightSize_reg.
+DSP Report: operator weightSize0 is absorbed into DSP weightSize_reg.
+DSP Report: operator weightSize0 is absorbed into DSP weightSize_reg.
+WARNING: [Synth 8-3917] design Main has port segActivate driven by constant 1
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/sequenceCounter_reg_rep[0]' (FDRE) to 'dNNProcessingElement/sequenceCounter_reg[0]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/sequenceCounter_reg_rep[1]' (FDRE) to 'dNNProcessingElement/sequenceCounter_reg[1]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/sequenceCounter_reg_rep[2]' (FDRE) to 'dNNProcessingElement/sequenceCounter_reg[2]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/sequenceCounter_reg_rep[3]' (FDRE) to 'dNNProcessingElement/sequenceCounter_reg[3]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/sequenceCounter_reg_rep[4]' (FDRE) to 'dNNProcessingElement/sequenceCounter_reg[4]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/sequenceCounter_reg_rep[5]' (FDRE) to 'dNNProcessingElement/sequenceCounter_reg[5]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/sequenceCounter_reg_rep[6]' (FDRE) to 'dNNProcessingElement/sequenceCounter_reg[6]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/R_reg[8]' (FDRE) to 'dNNProcessingElement/R_reg[9]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/R_reg[9]' (FDRE) to 'dNNProcessingElement/R_reg[10]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/R_reg[10]' (FDRE) to 'dNNProcessingElement/R_reg[11]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/R_reg[11]' (FDRE) to 'dNNProcessingElement/R_reg[12]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/R_reg[12]' (FDRE) to 'dNNProcessingElement/R_reg[13]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/R_reg[13]' (FDRE) to 'dNNProcessingElement/R_reg[14]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/R_reg[14]' (FDRE) to 'dNNProcessingElement/R_reg[15]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/R_reg[15]' (FDRE) to 'dNNProcessingElement/R_reg[16]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/R_reg[16]' (FDRE) to 'dNNProcessingElement/R_reg[17]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/R_reg[17]' (FDRE) to 'dNNProcessingElement/R_reg[18]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/R_reg[18]' (FDRE) to 'dNNProcessingElement/R_reg[19]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/R_reg[19]' (FDRE) to 'dNNProcessingElement/R_reg[20]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/R_reg[20]' (FDRE) to 'dNNProcessingElement/R_reg[21]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/R_reg[21]' (FDRE) to 'dNNProcessingElement/R_reg[22]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/R_reg[22]' (FDRE) to 'dNNProcessingElement/R_reg[23]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/R_reg[23]' (FDRE) to 'dNNProcessingElement/R_reg[24]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/R_reg[24]' (FDRE) to 'dNNProcessingElement/R_reg[25]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/R_reg[25]' (FDRE) to 'dNNProcessingElement/R_reg[26]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/R_reg[26]' (FDRE) to 'dNNProcessingElement/R_reg[27]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/R_reg[27]' (FDRE) to 'dNNProcessingElement/R_reg[28]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/R_reg[28]' (FDRE) to 'dNNProcessingElement/R_reg[29]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/R_reg[29]' (FDRE) to 'dNNProcessingElement/R_reg[30]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/R_reg[30]' (FDRE) to 'dNNProcessingElement/R_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dNNProcessingElement/\R_reg[31] )
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/S_reg[8]' (FDRE) to 'dNNProcessingElement/S_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/S_reg[9]' (FDRE) to 'dNNProcessingElement/S_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/S_reg[10]' (FDRE) to 'dNNProcessingElement/S_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/S_reg[11]' (FDRE) to 'dNNProcessingElement/S_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/S_reg[12]' (FDRE) to 'dNNProcessingElement/S_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/S_reg[13]' (FDRE) to 'dNNProcessingElement/S_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/S_reg[14]' (FDRE) to 'dNNProcessingElement/S_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/S_reg[15]' (FDRE) to 'dNNProcessingElement/S_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/S_reg[16]' (FDRE) to 'dNNProcessingElement/S_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/S_reg[17]' (FDRE) to 'dNNProcessingElement/S_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/S_reg[18]' (FDRE) to 'dNNProcessingElement/S_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/S_reg[19]' (FDRE) to 'dNNProcessingElement/S_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/S_reg[20]' (FDRE) to 'dNNProcessingElement/S_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/S_reg[21]' (FDRE) to 'dNNProcessingElement/S_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/S_reg[22]' (FDRE) to 'dNNProcessingElement/S_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/S_reg[23]' (FDRE) to 'dNNProcessingElement/S_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/S_reg[24]' (FDRE) to 'dNNProcessingElement/S_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/S_reg[25]' (FDRE) to 'dNNProcessingElement/S_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/S_reg[26]' (FDRE) to 'dNNProcessingElement/S_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/S_reg[27]' (FDRE) to 'dNNProcessingElement/S_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/S_reg[28]' (FDRE) to 'dNNProcessingElement/S_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/S_reg[29]' (FDRE) to 'dNNProcessingElement/S_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/S_reg[30]' (FDRE) to 'dNNProcessingElement/S_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dNNProcessingElement/\S_reg[31] )
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/Q_reg[8]' (FDRE) to 'dNNProcessingElement/Q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/Q_reg[9]' (FDRE) to 'dNNProcessingElement/Q_reg[10]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/Q_reg[10]' (FDRE) to 'dNNProcessingElement/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/Q_reg[11]' (FDRE) to 'dNNProcessingElement/Q_reg[12]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/Q_reg[12]' (FDRE) to 'dNNProcessingElement/Q_reg[13]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/Q_reg[13]' (FDRE) to 'dNNProcessingElement/Q_reg[14]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/Q_reg[14]' (FDRE) to 'dNNProcessingElement/Q_reg[15]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/Q_reg[15]' (FDRE) to 'dNNProcessingElement/Q_reg[16]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/Q_reg[16]' (FDRE) to 'dNNProcessingElement/Q_reg[17]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/Q_reg[17]' (FDRE) to 'dNNProcessingElement/Q_reg[18]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/Q_reg[18]' (FDRE) to 'dNNProcessingElement/Q_reg[19]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/Q_reg[19]' (FDRE) to 'dNNProcessingElement/Q_reg[20]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/Q_reg[20]' (FDRE) to 'dNNProcessingElement/Q_reg[21]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/Q_reg[21]' (FDRE) to 'dNNProcessingElement/Q_reg[22]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/Q_reg[22]' (FDRE) to 'dNNProcessingElement/Q_reg[23]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/Q_reg[23]' (FDRE) to 'dNNProcessingElement/Q_reg[24]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/Q_reg[24]' (FDRE) to 'dNNProcessingElement/Q_reg[25]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/Q_reg[25]' (FDRE) to 'dNNProcessingElement/Q_reg[26]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/Q_reg[26]' (FDRE) to 'dNNProcessingElement/Q_reg[27]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/Q_reg[27]' (FDRE) to 'dNNProcessingElement/Q_reg[28]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/Q_reg[28]' (FDRE) to 'dNNProcessingElement/Q_reg[29]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/Q_reg[29]' (FDRE) to 'dNNProcessingElement/Q_reg[30]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/Q_reg[30]' (FDRE) to 'dNNProcessingElement/Q_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dNNProcessingElement/\Q_reg[31] )
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/P_reg[8]' (FDRE) to 'dNNProcessingElement/P_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/P_reg[9]' (FDRE) to 'dNNProcessingElement/P_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/P_reg[10]' (FDRE) to 'dNNProcessingElement/P_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/P_reg[11]' (FDRE) to 'dNNProcessingElement/P_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/P_reg[12]' (FDRE) to 'dNNProcessingElement/P_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/P_reg[13]' (FDRE) to 'dNNProcessingElement/P_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/P_reg[14]' (FDRE) to 'dNNProcessingElement/P_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/P_reg[15]' (FDRE) to 'dNNProcessingElement/P_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/P_reg[16]' (FDRE) to 'dNNProcessingElement/P_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/P_reg[17]' (FDRE) to 'dNNProcessingElement/P_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/P_reg[18]' (FDRE) to 'dNNProcessingElement/P_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/P_reg[19]' (FDRE) to 'dNNProcessingElement/P_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/P_reg[20]' (FDRE) to 'dNNProcessingElement/P_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/P_reg[21]' (FDRE) to 'dNNProcessingElement/P_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/P_reg[22]' (FDRE) to 'dNNProcessingElement/P_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/P_reg[23]' (FDRE) to 'dNNProcessingElement/P_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/P_reg[24]' (FDRE) to 'dNNProcessingElement/P_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/P_reg[25]' (FDRE) to 'dNNProcessingElement/P_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/P_reg[26]' (FDRE) to 'dNNProcessingElement/P_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/P_reg[27]' (FDRE) to 'dNNProcessingElement/P_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/P_reg[28]' (FDRE) to 'dNNProcessingElement/P_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/P_reg[29]' (FDRE) to 'dNNProcessingElement/P_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/P_reg[30]' (FDRE) to 'dNNProcessingElement/P_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dNNProcessingElement/\P_reg[31] )
+INFO: [Synth 8-3886] merging instance 'dNNProcessingElement/C_reg[8]' (FDRE) to 'dNNProcessingElement/C_reg[9]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dNNProcessingElement/\C_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dNNProcessingElement/\M_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dNNProcessingElement/\globalState_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dNNProcessingElement/reach_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dNNProcessingElement/\localState_reg[3] )
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[47]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[46]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[45]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[44]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[43]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[42]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[41]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[40]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[39]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[38]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[37]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[36]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[35]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[34]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[33]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[32]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[31]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[30]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[29]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[28]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[27]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[26]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[25]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[24]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[23]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[22]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[21]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[20]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[19]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[18]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[17]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[16]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[15]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[47]__0) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[46]__0) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[45]__0) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[44]__0) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[43]__0) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[42]__0) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[41]__0) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[40]__0) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[39]__0) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[38]__0) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[37]__0) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[36]__0) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[35]__0) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[34]__0) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[33]__0) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[32]__0) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[31]__0) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[30]__0) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[29]__0) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[28]__0) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[27]__0) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[26]__0) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[25]__0) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[24]__0) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[23]__0) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[22]__0) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[21]__0) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[20]__0) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[19]__0) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[18]__0) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (outputSize_reg[17]__0) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (inputSize_reg[47]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (inputSize_reg[46]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (inputSize_reg[45]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (inputSize_reg[44]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (inputSize_reg[43]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (inputSize_reg[42]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (inputSize_reg[41]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (inputSize_reg[40]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (inputSize_reg[39]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (inputSize_reg[38]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (inputSize_reg[37]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (inputSize_reg[36]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (inputSize_reg[35]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (inputSize_reg[34]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (inputSize_reg[33]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (inputSize_reg[32]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (inputSize_reg[31]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (inputSize_reg[30]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (inputSize_reg[29]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (inputSize_reg[28]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (inputSize_reg[27]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (inputSize_reg[26]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (inputSize_reg[25]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (inputSize_reg[24]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (inputSize_reg[23]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (inputSize_reg[22]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (inputSize_reg[21]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (inputSize_reg[20]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (inputSize_reg[19]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (inputSize_reg[18]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (inputSize_reg[17]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (inputSize_reg[16]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (inputSize_reg[15]) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (inputSize_reg[47]__0) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (inputSize_reg[46]__0) is unused and will be removed from module DNNProcessingElement.
+WARNING: [Synth 8-3332] Sequential element (inputSize_reg[45]__0) is unused and will be removed from module DNNProcessingElement.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dNNProcessingElement/i_3/\skipCounter_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\receiver/sequenceCounter_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sender/sequenceCounter_reg[14] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 1156.895 ; gain = 412.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++---------------------+-------------+-----------+----------------------+--------------------------+
+|Module Name          | RTL Object  | Inference | Size (Depth x Width) | Primitives               | 
++---------------------+-------------+-----------+----------------------+--------------------------+
+|dNNProcessingElement | weights_reg | Implied   | 128 x 8              | RAM64X1D x 4	RAM64M x 4	 | 
+|dNNProcessingElement | inputs_reg  | Implied   | 128 x 8              | RAM64X1D x 4	RAM64M x 4	 | 
+|dNNProcessingElement | outputs_reg | Implied   | 128 x 8              | RAM64X1D x 8	RAM64M x 8	 | 
++---------------------+-------------+-----------+----------------------+--------------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping	Report (see note below)
++---------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name          | DSP Mapping     | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++---------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|DNNProcessingElement | A2*B            | 18     | 16     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|DNNProcessingElement | (PCIN>>17)+A*B  | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|DNNProcessingElement | A2*B2           | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|DNNProcessingElement | (PCIN>>17)+A2*B | 18     | 16     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|DNNProcessingElement | A2*B            | 18     | 16     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|DNNProcessingElement | (PCIN>>17)+A*B  | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|DNNProcessingElement | A*B2            | 18     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|DNNProcessingElement | (PCIN>>17)+A*B  | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|DNNProcessingElement | A*B2            | 18     | 9      | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|DNNProcessingElement | (PCIN>>17)+A*B2 | 16     | 9      | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|DNNProcessingElement | A*B             | 18     | 9      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|DNNProcessingElement | (PCIN>>17)+A*B  | 16     | 9      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|DNNProcessingElement | A*B             | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|DNNProcessingElement | (PCIN>>17)+A*B  | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|DNNProcessingElement | A*B             | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|DNNProcessingElement | (PCIN>>17)+A*B  | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|DNNProcessingElement | A2*B            | 18     | 16     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|DNNProcessingElement | (PCIN>>17)+A*B  | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|DNNProcessingElement | A*B2            | 18     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|DNNProcessingElement | (PCIN>>17)+A*B  | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|DNNProcessingElement | A2*B            | 18     | 16     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|DNNProcessingElement | (PCIN>>17)+A*B  | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|DNNProcessingElement | A2*B2           | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|DNNProcessingElement | (PCIN>>17)+A2*B | 18     | 16     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|DNNProcessingElement | A2*B            | 18     | 16     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|DNNProcessingElement | (PCIN>>17)+A*B  | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|DNNProcessingElement | A*B2            | 18     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|DNNProcessingElement | (PCIN>>17)+A*B  | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|DNNProcessingElement | A2*B            | 18     | 16     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|DNNProcessingElement | (PCIN>>17)+A*B  | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|DNNProcessingElement | A*B2            | 18     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|DNNProcessingElement | (PCIN>>17)+A*B  | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
++---------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:37 . Memory (MB): peak = 1205.148 ; gain = 460.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:38 . Memory (MB): peak = 1206.887 ; gain = 462.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping	Report
++---------------------+-------------+-----------+----------------------+--------------------------+
+|Module Name          | RTL Object  | Inference | Size (Depth x Width) | Primitives               | 
++---------------------+-------------+-----------+----------------------+--------------------------+
+|dNNProcessingElement | weights_reg | Implied   | 128 x 8              | RAM64X1D x 4	RAM64M x 4	 | 
+|dNNProcessingElement | inputs_reg  | Implied   | 128 x 8              | RAM64X1D x 4	RAM64M x 4	 | 
+|dNNProcessingElement | outputs_reg | Implied   | 128 x 8              | RAM64X1D x 8	RAM64M x 8	 | 
++---------------------+-------------+-----------+----------------------+--------------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:38 . Memory (MB): peak = 1236.055 ; gain = 491.258
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:46 . Memory (MB): peak = 1252.980 ; gain = 508.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:46 . Memory (MB): peak = 1252.980 ; gain = 508.184
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:47 . Memory (MB): peak = 1252.980 ; gain = 508.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:47 . Memory (MB): peak = 1252.980 ; gain = 508.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:47 . Memory (MB): peak = 1252.980 ; gain = 508.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:47 . Memory (MB): peak = 1252.980 ; gain = 508.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     1|
+|2     |CARRY4    |   253|
+|3     |DSP48E1_3 |     4|
+|4     |DSP48E1_4 |     3|
+|5     |DSP48E1_5 |     4|
+|6     |DSP48E1_6 |     5|
+|7     |DSP48E1_7 |     4|
+|8     |DSP48E1_8 |     3|
+|9     |DSP48E1_9 |     2|
+|10    |LUT1      |    46|
+|11    |LUT2      |   535|
+|12    |LUT3      |   213|
+|13    |LUT4      |   321|
+|14    |LUT5      |    59|
+|15    |LUT6      |   299|
+|16    |RAM64M    |    16|
+|17    |RAM64X1D  |    16|
+|18    |FDRE      |   433|
+|19    |FDSE      |     1|
+|20    |IBUF      |     3|
+|21    |OBUF      |    15|
++------+----------+------+
+
+Report Instance Areas: 
++------+-----------------------+---------------------+------+
+|      |Instance               |Module               |Cells |
++------+-----------------------+---------------------+------+
+|1     |top                    |                     |  2236|
+|2     |  dNNProcessingElement |DNNProcessingElement |  1978|
+|3     |  display7             |Display7             |     7|
+|4     |  receiver             |Receiver             |    98|
+|5     |  sender               |Sender               |    63|
++------+-----------------------+---------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:47 . Memory (MB): peak = 1252.980 ; gain = 508.184
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 194 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:45 . Memory (MB): peak = 1252.980 ; gain = 402.570
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:47 . Memory (MB): peak = 1252.980 ; gain = 508.184
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1264.988 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 310 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'Main' is not ideal for floorplanning, since the cellview 'DNNProcessingElement' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1264.988 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  RAM64M => RAM64M (RAMD64E(x4)): 16 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 16 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+178 Infos, 106 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:01:01 . Memory (MB): peak = 1264.988 ; gain = 807.590
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1264.988 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/tomgl/Vivado/DNNAcc/DNNAcc.runs/synth_1/Main.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Main_utilization_synth.rpt -pb Main_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Dec  8 14:44:48 2022...

@@ -1,0 +1,110 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Thu Dec  8 14:45:35 2022
+| Host         : Mark4 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Main_control_sets_placed.rpt
+| Design       : Main
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    32 |
+|    Minimum number of control sets                        |    32 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    38 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    32 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     3 |
+| >= 6 to < 8        |     2 |
+| >= 8 to < 10       |     9 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     4 |
+| >= 14 to < 16      |     2 |
+| >= 16              |    11 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               0 |            0 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              17 |           12 |
+| Yes          | No                    | No                     |              14 |            7 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             403 |          133 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+--------------------------------------------------------+------------------+------------------+----------------+
+|  Clock Signal  |                      Enable Signal                     | Set/Reset Signal | Slice Load Count | Bel Load Count |
++----------------+--------------------------------------------------------+------------------+------------------+----------------+
+|  clk_IBUF_BUFG | sender/TxD_i_1_n_0                                     | reset_IBUF       |                1 |              1 |
+|  clk_IBUF_BUFG | receiver/FSM_sequential_state[3]_i_1__0_n_0            | reset_IBUF       |                2 |              4 |
+|  clk_IBUF_BUFG | sender/FSM_sequential_state[3]_i_1_n_0                 | reset_IBUF       |                2 |              4 |
+|  clk_IBUF_BUFG | dNNProcessingElement/skipCounter[0]_i_1_n_0            | reset_IBUF       |                2 |              5 |
+|  clk_IBUF_BUFG | dNNProcessingElement/yStride                           |                  |                2 |              7 |
+|  clk_IBUF_BUFG | dNNProcessingElement/xStride                           |                  |                5 |              7 |
+|  clk_IBUF_BUFG | receiver/E[0]                                          | reset_IBUF       |                4 |              8 |
+|  clk_IBUF_BUFG | sender/data                                            | reset_IBUF       |                4 |              8 |
+|  clk_IBUF_BUFG | dNNProcessingElement/outputSize0_i_1_n_0               | reset_IBUF       |                3 |              8 |
+|  clk_IBUF_BUFG | dNNProcessingElement/outputSize1_i_2_n_0               | reset_IBUF       |                3 |              8 |
+|  clk_IBUF_BUFG | dNNProcessingElement/S[7]_i_1_n_0                      | reset_IBUF       |                5 |              8 |
+|  clk_IBUF_BUFG | dNNProcessingElement/CEB2                              | reset_IBUF       |                3 |              8 |
+|  clk_IBUF_BUFG | dNNProcessingElement/R[7]_i_1_n_0                      | reset_IBUF       |                5 |              8 |
+|  clk_IBUF_BUFG | dNNProcessingElement/dataOut[7]_i_1_n_0                | reset_IBUF       |                2 |              8 |
+|  clk_IBUF_BUFG | dNNProcessingElement/inputSize0_i_1_n_0                | reset_IBUF       |                5 |              8 |
+|  clk_IBUF_BUFG | dNNProcessingElement/inputs_reg_0_63_0_2_i_1_n_0       |                  |                3 |             12 |
+|  clk_IBUF_BUFG | dNNProcessingElement/weights_reg_0_63_0_2_i_1_n_0      |                  |                3 |             12 |
+|  clk_IBUF_BUFG | dNNProcessingElement/weights_reg_64_127_0_2_i_1_n_0    |                  |                3 |             12 |
+|  clk_IBUF_BUFG | dNNProcessingElement/inputs_reg_64_127_0_2_i_1_n_0     |                  |                3 |             12 |
+|  clk_IBUF_BUFG | receiver/sequenceCounter                               | reset_IBUF       |                5 |             14 |
+|  clk_IBUF_BUFG | sender/sequenceCounter                                 | reset_IBUF       |                6 |             14 |
+|  clk_IBUF_BUFG |                                                        | reset_IBUF       |               12 |             17 |
+|  clk_IBUF_BUFG | dNNProcessingElement/outputs_reg_r1_0_63_0_2_i_4_n_0   |                  |                6 |             24 |
+|  clk_IBUF_BUFG | dNNProcessingElement/outputs_reg_r1_64_127_0_2_i_1_n_0 |                  |                6 |             24 |
+|  clk_IBUF_BUFG | dNNProcessingElement/sequenceCounter[31]_i_1_n_0       | reset_IBUF       |                9 |             32 |
+|  clk_IBUF_BUFG | dNNProcessingElement/m[0]_i_1_n_0                      | reset_IBUF       |                8 |             32 |
+|  clk_IBUF_BUFG | dNNProcessingElement/p_2_out                           | reset_IBUF       |                8 |             32 |
+|  clk_IBUF_BUFG | dNNProcessingElement/q[0]_i_1_n_0                      | reset_IBUF       |                8 |             32 |
+|  clk_IBUF_BUFG | dNNProcessingElement/CEC                               | reset_IBUF       |                8 |             32 |
+|  clk_IBUF_BUFG | dNNProcessingElement/CEA2                              | reset_IBUF       |                8 |             32 |
+|  clk_IBUF_BUFG | dNNProcessingElement/c[0]_i_1_n_0                      | reset_IBUF       |                8 |             32 |
+|  clk_IBUF_BUFG | dNNProcessingElement/outputSize0_i_2_n_0               | reset_IBUF       |               24 |             65 |
++----------------+--------------------------------------------------------+------------------+------------------+----------------+
+
+
