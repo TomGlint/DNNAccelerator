@@ -1,0 +1,701 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="DNNAcceleratorTest_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="DNNAcceleratorTest" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="1942001fs"></ZoomEndTime>
+      <Cursor1Time time="1000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="206"></NameColumnWidth>
+      <ValueColumnWidth column_width="113"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="35" />
+   <wvobject fp_name="/DNNAcceleratorTest/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DNNAcceleratorTest/clock" type="logic">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DNNAcceleratorTest/dataIn" type="array">
+      <obj_property name="ElementShortName">dataIn[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dataIn[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DNNAcceleratorTest/validIn" type="logic">
+      <obj_property name="ElementShortName">validIn</obj_property>
+      <obj_property name="ObjectShortName">validIn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DNNAcceleratorTest/transmitDone" type="logic">
+      <obj_property name="ElementShortName">transmitDone</obj_property>
+      <obj_property name="ObjectShortName">transmitDone</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DNNAcceleratorTest/dataOut" type="array">
+      <obj_property name="ElementShortName">dataOut[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dataOut[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DNNAcceleratorTest/validOut" type="logic">
+      <obj_property name="ElementShortName">validOut</obj_property>
+      <obj_property name="ObjectShortName">validOut</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/globalState" type="array">
+      <obj_property name="ElementShortName">globalState[31:0]</obj_property>
+      <obj_property name="ObjectShortName">globalState[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/localState" type="array">
+      <obj_property name="ElementShortName">localState[31:0]</obj_property>
+      <obj_property name="ObjectShortName">localState[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/sequenceCounter" type="array">
+      <obj_property name="ElementShortName">sequenceCounter[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sequenceCounter[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/M" type="array">
+      <obj_property name="ElementShortName">M[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/C" type="array">
+      <obj_property name="ElementShortName">C[31:0]</obj_property>
+      <obj_property name="ObjectShortName">C[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/P" type="array">
+      <obj_property name="ElementShortName">P[31:0]</obj_property>
+      <obj_property name="ObjectShortName">P[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/Q" type="array">
+      <obj_property name="ElementShortName">Q[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Q[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/R" type="array">
+      <obj_property name="ElementShortName">R[31:0]</obj_property>
+      <obj_property name="ObjectShortName">R[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/S" type="array">
+      <obj_property name="ElementShortName">S[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/W" type="array">
+      <obj_property name="ElementShortName">W[31:0]</obj_property>
+      <obj_property name="ObjectShortName">W[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/H" type="array">
+      <obj_property name="ElementShortName">H[31:0]</obj_property>
+      <obj_property name="ObjectShortName">H[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/xStride" type="array">
+      <obj_property name="ElementShortName">xStride[31:0]</obj_property>
+      <obj_property name="ObjectShortName">xStride[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/yStride" type="array">
+      <obj_property name="ElementShortName">yStride[31:0]</obj_property>
+      <obj_property name="ObjectShortName">yStride[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/inputSize" type="array">
+      <obj_property name="ElementShortName">inputSize[31:0]</obj_property>
+      <obj_property name="ObjectShortName">inputSize[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/weightSize" type="array">
+      <obj_property name="ElementShortName">weightSize[31:0]</obj_property>
+      <obj_property name="ObjectShortName">weightSize[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputSize" type="array">
+      <obj_property name="ElementShortName">outputSize[31:0]</obj_property>
+      <obj_property name="ObjectShortName">outputSize[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/m" type="array">
+      <obj_property name="ElementShortName">m[31:0]</obj_property>
+      <obj_property name="ObjectShortName">m[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/c" type="array">
+      <obj_property name="ElementShortName">c[31:0]</obj_property>
+      <obj_property name="ObjectShortName">c[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/p" type="array">
+      <obj_property name="ElementShortName">p[31:0]</obj_property>
+      <obj_property name="ObjectShortName">p[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/q" type="array">
+      <obj_property name="ElementShortName">q[31:0]</obj_property>
+      <obj_property name="ObjectShortName">q[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/r" type="array">
+      <obj_property name="ElementShortName">r[31:0]</obj_property>
+      <obj_property name="ObjectShortName">r[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/s" type="array">
+      <obj_property name="ElementShortName">s[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/indexOutput" type="array">
+      <obj_property name="ElementShortName">indexOutput[31:0]</obj_property>
+      <obj_property name="ObjectShortName">indexOutput[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/indexInput" type="array">
+      <obj_property name="ElementShortName">indexInput[31:0]</obj_property>
+      <obj_property name="ObjectShortName">indexInput[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/indexWeight" type="array">
+      <obj_property name="ElementShortName">indexWeight[31:0]</obj_property>
+      <obj_property name="ObjectShortName">indexWeight[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/inputs" type="array">
+      <obj_property name="ElementShortName">inputs[0:100][7:0]</obj_property>
+      <obj_property name="ObjectShortName">inputs[0:100][7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/weights" type="array">
+      <obj_property name="ElementShortName">weights[0:100][7:0]</obj_property>
+      <obj_property name="ObjectShortName">weights[0:100][7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs" type="array">
+      <obj_property name="ElementShortName">outputs[0:100][7:0]</obj_property>
+      <obj_property name="ObjectShortName">outputs[0:100][7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[0]" type="array">
+         <obj_property name="ElementShortName">[0][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[1]" type="array">
+         <obj_property name="ElementShortName">[1][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[2]" type="array">
+         <obj_property name="ElementShortName">[2][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[3]" type="array">
+         <obj_property name="ElementShortName">[3][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[4]" type="array">
+         <obj_property name="ElementShortName">[4][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[4][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[5]" type="array">
+         <obj_property name="ElementShortName">[5][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[5][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[6]" type="array">
+         <obj_property name="ElementShortName">[6][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[6][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[7]" type="array">
+         <obj_property name="ElementShortName">[7][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[7][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[8]" type="array">
+         <obj_property name="ElementShortName">[8][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[8][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[9]" type="array">
+         <obj_property name="ElementShortName">[9][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[9][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[10]" type="array">
+         <obj_property name="ElementShortName">[10][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[10][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[11]" type="array">
+         <obj_property name="ElementShortName">[11][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[11][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[12]" type="array">
+         <obj_property name="ElementShortName">[12][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[12][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[13]" type="array">
+         <obj_property name="ElementShortName">[13][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[13][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[14]" type="array">
+         <obj_property name="ElementShortName">[14][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[14][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[15]" type="array">
+         <obj_property name="ElementShortName">[15][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[15][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[16]" type="array">
+         <obj_property name="ElementShortName">[16][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[16][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[17]" type="array">
+         <obj_property name="ElementShortName">[17][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[17][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[18]" type="array">
+         <obj_property name="ElementShortName">[18][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[18][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[19]" type="array">
+         <obj_property name="ElementShortName">[19][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[19][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[20]" type="array">
+         <obj_property name="ElementShortName">[20][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[20][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[21]" type="array">
+         <obj_property name="ElementShortName">[21][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[21][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[22]" type="array">
+         <obj_property name="ElementShortName">[22][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[22][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[23]" type="array">
+         <obj_property name="ElementShortName">[23][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[23][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[24]" type="array">
+         <obj_property name="ElementShortName">[24][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[24][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[25]" type="array">
+         <obj_property name="ElementShortName">[25][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[25][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[26]" type="array">
+         <obj_property name="ElementShortName">[26][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[26][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[27]" type="array">
+         <obj_property name="ElementShortName">[27][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[27][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[28]" type="array">
+         <obj_property name="ElementShortName">[28][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[28][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[29]" type="array">
+         <obj_property name="ElementShortName">[29][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[29][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[30]" type="array">
+         <obj_property name="ElementShortName">[30][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[30][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[31]" type="array">
+         <obj_property name="ElementShortName">[31][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[31][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[32]" type="array">
+         <obj_property name="ElementShortName">[32][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[32][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[33]" type="array">
+         <obj_property name="ElementShortName">[33][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[33][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[34]" type="array">
+         <obj_property name="ElementShortName">[34][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[34][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[35]" type="array">
+         <obj_property name="ElementShortName">[35][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[35][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[36]" type="array">
+         <obj_property name="ElementShortName">[36][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[36][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[37]" type="array">
+         <obj_property name="ElementShortName">[37][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[37][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[38]" type="array">
+         <obj_property name="ElementShortName">[38][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[38][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[39]" type="array">
+         <obj_property name="ElementShortName">[39][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[39][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[40]" type="array">
+         <obj_property name="ElementShortName">[40][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[40][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[41]" type="array">
+         <obj_property name="ElementShortName">[41][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[41][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[42]" type="array">
+         <obj_property name="ElementShortName">[42][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[42][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[43]" type="array">
+         <obj_property name="ElementShortName">[43][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[43][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[44]" type="array">
+         <obj_property name="ElementShortName">[44][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[44][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[45]" type="array">
+         <obj_property name="ElementShortName">[45][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[45][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[46]" type="array">
+         <obj_property name="ElementShortName">[46][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[46][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[47]" type="array">
+         <obj_property name="ElementShortName">[47][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[47][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[48]" type="array">
+         <obj_property name="ElementShortName">[48][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[48][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[49]" type="array">
+         <obj_property name="ElementShortName">[49][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[49][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[50]" type="array">
+         <obj_property name="ElementShortName">[50][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[50][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[51]" type="array">
+         <obj_property name="ElementShortName">[51][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[51][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[52]" type="array">
+         <obj_property name="ElementShortName">[52][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[52][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[53]" type="array">
+         <obj_property name="ElementShortName">[53][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[53][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[54]" type="array">
+         <obj_property name="ElementShortName">[54][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[54][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[55]" type="array">
+         <obj_property name="ElementShortName">[55][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[55][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[56]" type="array">
+         <obj_property name="ElementShortName">[56][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[56][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[57]" type="array">
+         <obj_property name="ElementShortName">[57][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[57][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[58]" type="array">
+         <obj_property name="ElementShortName">[58][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[58][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[59]" type="array">
+         <obj_property name="ElementShortName">[59][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[59][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[60]" type="array">
+         <obj_property name="ElementShortName">[60][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[60][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[61]" type="array">
+         <obj_property name="ElementShortName">[61][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[61][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[62]" type="array">
+         <obj_property name="ElementShortName">[62][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[62][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[63]" type="array">
+         <obj_property name="ElementShortName">[63][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[63][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[64]" type="array">
+         <obj_property name="ElementShortName">[64][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[64][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[65]" type="array">
+         <obj_property name="ElementShortName">[65][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[65][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[66]" type="array">
+         <obj_property name="ElementShortName">[66][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[66][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[67]" type="array">
+         <obj_property name="ElementShortName">[67][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[67][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[68]" type="array">
+         <obj_property name="ElementShortName">[68][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[68][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[69]" type="array">
+         <obj_property name="ElementShortName">[69][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[69][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[70]" type="array">
+         <obj_property name="ElementShortName">[70][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[70][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[71]" type="array">
+         <obj_property name="ElementShortName">[71][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[71][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[72]" type="array">
+         <obj_property name="ElementShortName">[72][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[72][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[73]" type="array">
+         <obj_property name="ElementShortName">[73][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[73][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[74]" type="array">
+         <obj_property name="ElementShortName">[74][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[74][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[75]" type="array">
+         <obj_property name="ElementShortName">[75][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[75][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[76]" type="array">
+         <obj_property name="ElementShortName">[76][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[76][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[77]" type="array">
+         <obj_property name="ElementShortName">[77][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[77][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[78]" type="array">
+         <obj_property name="ElementShortName">[78][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[78][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[79]" type="array">
+         <obj_property name="ElementShortName">[79][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[79][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[80]" type="array">
+         <obj_property name="ElementShortName">[80][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[80][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[81]" type="array">
+         <obj_property name="ElementShortName">[81][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[81][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[82]" type="array">
+         <obj_property name="ElementShortName">[82][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[82][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[83]" type="array">
+         <obj_property name="ElementShortName">[83][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[83][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[84]" type="array">
+         <obj_property name="ElementShortName">[84][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[84][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[85]" type="array">
+         <obj_property name="ElementShortName">[85][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[85][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[86]" type="array">
+         <obj_property name="ElementShortName">[86][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[86][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[87]" type="array">
+         <obj_property name="ElementShortName">[87][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[87][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[88]" type="array">
+         <obj_property name="ElementShortName">[88][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[88][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[89]" type="array">
+         <obj_property name="ElementShortName">[89][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[89][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[90]" type="array">
+         <obj_property name="ElementShortName">[90][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[90][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[91]" type="array">
+         <obj_property name="ElementShortName">[91][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[91][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[92]" type="array">
+         <obj_property name="ElementShortName">[92][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[92][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[93]" type="array">
+         <obj_property name="ElementShortName">[93][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[93][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[94]" type="array">
+         <obj_property name="ElementShortName">[94][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[94][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[95]" type="array">
+         <obj_property name="ElementShortName">[95][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[95][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[96]" type="array">
+         <obj_property name="ElementShortName">[96][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[96][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[97]" type="array">
+         <obj_property name="ElementShortName">[97][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[97][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[98]" type="array">
+         <obj_property name="ElementShortName">[98][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[98][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[99]" type="array">
+         <obj_property name="ElementShortName">[99][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[99][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DNNAcceleratorTest/testDNNAccelerator/outputs[100]" type="array">
+         <obj_property name="ElementShortName">[100][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[100][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

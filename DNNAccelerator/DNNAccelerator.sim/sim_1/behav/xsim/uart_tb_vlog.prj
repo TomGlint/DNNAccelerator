@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../DNNAccelerator.srcs/sources_1/new/UARTReceiver.v" \
+"../../../../DNNAccelerator.srcs/sources_1/new/UARTTransmitter.v" \
+"../../../../DNNAccelerator.srcs/sim_1/new/UARTTest.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

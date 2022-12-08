@@ -1,0 +1,10 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+C:/Users/Glint/Documents/Projects/DNNAccelerator/DNNAccelerator.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+C:/Users/Glint/Documents/Projects/DNNAccelerator/DNNAccelerator.srcs/sim_1/new/DNNAccelerator.v,1670416355,verilog,,C:/Users/Glint/Documents/Projects/DNNAccelerator/DNNAccelerator.srcs/sim_1/new/DNNAcceleratorTest.v,,DNNAccelerator,,,,,,,,
+C:/Users/Glint/Documents/Projects/DNNAccelerator/DNNAccelerator.srcs/sim_1/new/DNNAcceleratorTest.v,1670408441,verilog,,,,DNNAcceleratorTest,,,,,,,,
+C:/Users/Glint/Documents/Projects/DNNAccelerator/DNNAccelerator.srcs/sim_1/new/UARTTest.v,1670418026,verilog,,,,uart_tb,,,,,,,,
+C:/Users/Glint/Documents/Projects/DNNAccelerator/DNNAccelerator.srcs/sources_1/new/UARTReceiver.v,1670417478,verilog,,C:/Users/Glint/Documents/Projects/DNNAccelerator/DNNAccelerator.srcs/sources_1/new/UARTTransmitter.v,,uart_rx,,,,,,,,
+C:/Users/Glint/Documents/Projects/DNNAccelerator/DNNAccelerator.srcs/sources_1/new/UARTTransmitter.v,1670417464,verilog,,C:/Users/Glint/Documents/Projects/DNNAccelerator/DNNAccelerator.srcs/sim_1/new/UARTTest.v,,uart_tx,,,,,,,,
